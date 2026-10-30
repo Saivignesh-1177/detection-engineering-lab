@@ -1,0 +1,22 @@
+{
+  "tp": [
+    {
+      "UtcTime": "2026-10-30T10:02:00Z",
+      "product": "windows",
+      "EventID": 1,
+      "ParentImage": "C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE",
+      "Image": "C:\\Windows\\System32\\cmd.exe",
+      "CommandLine": "cmd /c whoami"
+    }
+  ],
+  "tn": [
+    {
+      "UtcTime": "2026-10-30T10:02:01Z",
+      "product": "windows",
+      "EventID": 1,
+      "ParentImage": "C:\\Windows\\explorer.exe",
+      "Image": "C:\\Windows\\System32\\cmd.exe",
+      "CommandLine": "cmd"
+    }
+  ]
+}

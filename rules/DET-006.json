@@ -1,0 +1,22 @@
+{
+  "id": "DET-006",
+  "title": "Shadow copy / backup catalog deletion",
+  "level": "critical",
+  "attack": [
+    "T1490"
+  ],
+  "logsource": {
+    "product": "windows",
+    "EventID": 1
+  },
+  "selection": {
+    "CommandLine|re": [
+      "vssadmin(\\.exe)?\\s+delete\\s+shadows",
+      "wmic(\\.exe)?\\s+shadowcopy\\s+delete",
+      "wbadmin(\\.exe)?\\s+delete\\s+catalog"
+    ]
+  },
+  "falsepositives": [
+    "Rare backup maintenance"
+  ]
+}

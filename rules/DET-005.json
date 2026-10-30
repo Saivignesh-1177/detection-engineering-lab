@@ -1,0 +1,28 @@
+{
+  "id": "DET-005",
+  "title": "Scheduled task created from command line",
+  "level": "medium",
+  "attack": [
+    "T1053.005"
+  ],
+  "logsource": {
+    "product": "windows",
+    "EventID": 1
+  },
+  "selection": {
+    "Image|endswith": [
+      "\\schtasks.exe"
+    ],
+    "CommandLine|contains": [
+      "/create"
+    ]
+  },
+  "filter": {
+    "ParentImage|endswith": [
+      "\\msiexec.exe"
+    ]
+  },
+  "falsepositives": [
+    "Software installers"
+  ]
+}

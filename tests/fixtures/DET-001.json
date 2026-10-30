@@ -1,0 +1,30 @@
+{
+  "tp": [
+    {
+      "UtcTime": "2026-10-30T10:00:01Z",
+      "product": "windows",
+      "EventID": 1,
+      "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentImage": "C:\\Windows\\explorer.exe",
+      "CommandLine": "powershell.exe -nop -w hidden -enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoA"
+    }
+  ],
+  "tn": [
+    {
+      "UtcTime": "2026-10-30T10:00:02Z",
+      "product": "windows",
+      "EventID": 1,
+      "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentImage": "C:\\Windows\\explorer.exe",
+      "CommandLine": "powershell.exe -File C:\\scripts\\backup.ps1 -Environment prod"
+    },
+    {
+      "UtcTime": "2026-10-30T10:00:03Z",
+      "product": "windows",
+      "EventID": 1,
+      "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "ParentImage": "C:\\Windows\\CCM\\CcmExec.exe",
+      "CommandLine": "powershell.exe -nop -w hidden -enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoA"
+    }
+  ]
+}

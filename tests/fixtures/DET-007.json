@@ -1,0 +1,19 @@
+{
+  "tp": [
+    {
+      "UtcTime": "2026-10-30T10:07:00Z",
+      "product": "windows",
+      "EventID": 1102,
+      "Channel": "Security",
+      "SubjectUserName": "eve"
+    }
+  ],
+  "tn": [
+    {
+      "UtcTime": "2026-10-30T10:07:01Z",
+      "product": "windows",
+      "EventID": 104,
+      "Channel": "System"
+    }
+  ]
+}

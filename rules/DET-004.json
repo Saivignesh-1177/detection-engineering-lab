@@ -1,0 +1,27 @@
+{
+  "id": "DET-004",
+  "title": "Password spraying / brute force from one source",
+  "level": "medium",
+  "attack": [
+    "T1110.001",
+    "T1110.003"
+  ],
+  "logsource": {
+    "product": "windows",
+    "EventID": 4625
+  },
+  "selection": {
+    "LogonType": [
+      3,
+      10
+    ]
+  },
+  "threshold": {
+    "count": 5,
+    "window_s": 60,
+    "group_by": "IpAddress"
+  },
+  "falsepositives": [
+    "Service account with a stale password"
+  ]
+}

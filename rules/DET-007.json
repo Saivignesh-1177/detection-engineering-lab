@@ -1,0 +1,20 @@
+{
+  "id": "DET-007",
+  "title": "Security event log cleared",
+  "level": "high",
+  "attack": [
+    "T1070.001"
+  ],
+  "logsource": {
+    "product": "windows",
+    "EventID": 1102
+  },
+  "selection": {
+    "Channel": [
+      "Security"
+    ]
+  },
+  "falsepositives": [
+    "Documented admin log rotation"
+  ]
+}

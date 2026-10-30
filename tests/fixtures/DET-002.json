@@ -1,0 +1,30 @@
+{
+  "tp": [
+    {
+      "UtcTime": "2026-10-30T10:01:00Z",
+      "product": "windows",
+      "EventID": 10,
+      "SourceImage": "C:\\Users\\bob\\AppData\\Local\\Temp\\x.exe",
+      "TargetImage": "C:\\Windows\\System32\\lsass.exe",
+      "GrantedAccess": "0x1010"
+    }
+  ],
+  "tn": [
+    {
+      "UtcTime": "2026-10-30T10:01:01Z",
+      "product": "windows",
+      "EventID": 10,
+      "SourceImage": "C:\\ProgramData\\Microsoft\\Windows Defender\\MsMpEng.exe",
+      "TargetImage": "C:\\Windows\\System32\\lsass.exe",
+      "GrantedAccess": "0x1010"
+    },
+    {
+      "UtcTime": "2026-10-30T10:01:02Z",
+      "product": "windows",
+      "EventID": 10,
+      "SourceImage": "C:\\Windows\\explorer.exe",
+      "TargetImage": "C:\\Windows\\System32\\lsass.exe",
+      "GrantedAccess": "0x1000"
+    }
+  ]
+}

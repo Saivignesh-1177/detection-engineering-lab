@@ -1,0 +1,21 @@
+{
+  "id": "DET-008",
+  "title": "Remote script piped directly to a shell",
+  "level": "high",
+  "attack": [
+    "T1105",
+    "T1059.004"
+  ],
+  "logsource": {
+    "product": "linux",
+    "EventID": "execve"
+  },
+  "selection": {
+    "CommandLine|re": [
+      "(curl|wget)\\b[^|]*\\|\\s*(sudo\\s+)?(ba|z|da)?sh\\b"
+    ]
+  },
+  "falsepositives": [
+    "Developer installers (allowlist known URLs)"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "DET-001",
+  "title": "Encoded PowerShell command line",
+  "level": "high",
+  "attack": [
+    "T1059.001",
+    "T1027"
+  ],
+  "logsource": {
+    "product": "windows",
+    "EventID": 1
+  },
+  "selection": {
+    "Image|endswith": [
+      "\\powershell.exe",
+      "\\pwsh.exe"
+    ],
+    "CommandLine|re": [
+      "\\s-e(nc|ncodedcommand)?\\s+[a-z0-9+/=]{20,}"
+    ]
+  },
+  "filter": {
+    "ParentImage|endswith": [
+      "\\ccmexec.exe"
+    ]
+  },
+  "falsepositives": [
+    "Management agents (add to filter)"
+  ]
+}

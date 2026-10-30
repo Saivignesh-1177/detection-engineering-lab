@@ -1,0 +1,30 @@
+{
+  "tp": [
+    {
+      "UtcTime": "2026-10-30T10:05:00Z",
+      "product": "windows",
+      "EventID": 1,
+      "Image": "C:\\Windows\\System32\\schtasks.exe",
+      "ParentImage": "C:\\Windows\\System32\\cmd.exe",
+      "CommandLine": "schtasks /create /sc minute /tn upd /tr C:\\Users\\Public\\u.exe"
+    }
+  ],
+  "tn": [
+    {
+      "UtcTime": "2026-10-30T10:05:01Z",
+      "product": "windows",
+      "EventID": 1,
+      "Image": "C:\\Windows\\System32\\schtasks.exe",
+      "ParentImage": "C:\\Windows\\System32\\msiexec.exe",
+      "CommandLine": "schtasks /create /tn Updater"
+    },
+    {
+      "UtcTime": "2026-10-30T10:05:02Z",
+      "product": "windows",
+      "EventID": 1,
+      "Image": "C:\\Windows\\System32\\schtasks.exe",
+      "ParentImage": "C:\\Windows\\System32\\cmd.exe",
+      "CommandLine": "schtasks /query"
+    }
+  ]
+}

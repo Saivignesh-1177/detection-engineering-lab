@@ -1,0 +1,25 @@
+{
+  "id": "DET-009",
+  "title": "CloudTrail logging stopped or deleted",
+  "level": "critical",
+  "attack": [
+    "T1562.008"
+  ],
+  "logsource": {
+    "product": "aws"
+  },
+  "selection": {
+    "eventSource": [
+      "cloudtrail.amazonaws.com"
+    ],
+    "eventName": [
+      "StopLogging",
+      "DeleteTrail",
+      "UpdateTrail",
+      "PutEventSelectors"
+    ]
+  },
+  "falsepositives": [
+    "Change-managed trail reconfiguration"
+  ]
+}

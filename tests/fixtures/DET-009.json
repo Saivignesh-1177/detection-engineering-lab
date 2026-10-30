@@ -1,0 +1,25 @@
+{
+  "tp": [
+    {
+      "UtcTime": "2026-10-30T10:09:00Z",
+      "product": "aws",
+      "eventSource": "cloudtrail.amazonaws.com",
+      "eventName": "StopLogging",
+      "sourceIPAddress": "198.51.100.4"
+    }
+  ],
+  "tn": [
+    {
+      "UtcTime": "2026-10-30T10:09:01Z",
+      "product": "aws",
+      "eventSource": "cloudtrail.amazonaws.com",
+      "eventName": "DescribeTrails"
+    },
+    {
+      "UtcTime": "2026-10-30T10:09:02Z",
+      "product": "aws",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "DeleteBucket"
+    }
+  ]
+}

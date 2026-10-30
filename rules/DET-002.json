@@ -1,0 +1,33 @@
+{
+  "id": "DET-002",
+  "title": "LSASS memory access by unexpected process",
+  "level": "critical",
+  "attack": [
+    "T1003.001"
+  ],
+  "logsource": {
+    "product": "windows",
+    "EventID": 10
+  },
+  "selection": {
+    "TargetImage|endswith": [
+      "\\lsass.exe"
+    ],
+    "GrantedAccess": [
+      "0x1010",
+      "0x1410",
+      "0x1fffff",
+      "0x1438"
+    ]
+  },
+  "filter": {
+    "SourceImage|endswith": [
+      "\\msmpeng.exe",
+      "\\wininit.exe",
+      "\\csrss.exe"
+    ]
+  },
+  "falsepositives": [
+    "EDR / AV products not yet in filter"
+  ]
+}

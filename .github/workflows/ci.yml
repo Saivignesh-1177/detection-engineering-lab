@@ -1,0 +1,25 @@
+name: ci
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  detections:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generated content is up to date
+        run: |
+          python tools/build_content.py
+          python -m detlab coverage
+          git diff --exit-code
+      - name: Detection unit tests
+        run: python -m unittest -v
+      - name: Replay simulated intrusion
+        run: python -m detlab hunt data/intrusion-day.jsonl || test $? -eq 1
